@@ -39,10 +39,10 @@ int poGeoSredini(const void *a, const void *b) {
         zbir1 *= niza[i];
         zbir2 *= nizb[i];
     }
-    for(int i = 0; i < n; i++) {
-        zbir1 = sqrt(zbir1);
-        zbir2 = sqrt(zbir2);
-    }
+
+    zbir1 = powf(zbir1, 1/n);
+    zbir2 = powf(zbir2, 1/n);
+
     return (zbir1 > zbir2) - (zbir2 > zbir1);
 }
 
