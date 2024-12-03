@@ -10,7 +10,8 @@ poređane leksikografski po svom nazivu. Pomoći bibliotekarima da poređaju knj
 
 // Resenje koriscenjem strukture podataka Trie (prefiksno stablo) - radi za mala slova
 
-typedef struct Cvor {
+typedef struct Cvor 
+{
     struct Cvor* deca[31];
     int krajReci;
 } Cvor;
